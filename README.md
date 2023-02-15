@@ -1,6 +1,6 @@
 Проект: Место на Реакте
 
-https://antonn1985.github.io/mesto-react/
+https://antonn1985.github.io/react-mesto-auth/
 
 Проектная работа на Яндекс Практикуме. Этакая фотосоциальная сеть
 
