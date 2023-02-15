@@ -1,0 +1,15 @@
+.page__elements {
+  margin: 51px auto 67px;
+}
+
+@media screen and (max-width: 1023px) {
+  .page__elements {
+    margin: 44px 100px 57px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .page__elements {
+    margin: 36px 19px 48px;
+  }
+}
