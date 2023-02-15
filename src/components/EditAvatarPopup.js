@@ -3,7 +3,7 @@ import React from 'react';
 import { useRef } from 'react';
 
 function EditAvatarPopup({ isOpen, onClose, onUpdateAvatar }) {
-    const avatarRef = useRef(null);
+    const avatarRef = useRef();
 
     function handleSubmit(e) {
         e.preventDefault();
