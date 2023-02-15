@@ -8,13 +8,10 @@ function EditAvatarPopup({ isOpen, onClose, onUpdateAvatar }) {
     function handleSubmit(e) {
         e.preventDefault();
         onUpdateAvatar({
-            avatar: avatarRef.current
+            avatar: avatarRef.current.value
         });
+        avatarRef.current.value = ''
     }
-
-    function handleChangeAvatar(e) {
-        avatarRef.current = e.target.value;
-    };
 
     return (
         <PopupWithForm onClose={onClose} name="avatar"
@@ -27,7 +24,6 @@ function EditAvatarPopup({ isOpen, onClose, onUpdateAvatar }) {
                 id="avatar-link-input"
                 required=""
                 ref={avatarRef}
-                onChange={handleChangeAvatar}
             />
             <span className="form__input-error avatar-link-input-error" />
         </PopupWithForm>
